@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 상단 바 영역 -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/background_dark">
+
+        <!-- 기본 정보 텍스트 -->
+        <TextView
+            android:id="@+id/basic_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="테블릿 사용자 기본 정보"
+            android:textColor="@android:color/white"
+            android:padding="8dp"/>
+
+        <!-- 대기 인원 텍스트 -->
+        <TextView
+            android:id="@+id/waiting_count_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="대기 인원: "
+            android:textColor="@android:color/white"
+            android:textAlignment="viewEnd"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/lookupbutton"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="대화조회" />
+
+    </LinearLayout>
+
+    <!-- 메뉴 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/menu_area"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 메뉴 1 -->
+            <TextView
+                android:id="@+id/menu_item_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:clickable="true"
+                android:padding="8dp"
+                android:text="메뉴 1"
+                android:textColor="@android:color/white" />
+
+            <!-- 메뉴 2 -->
+            <TextView
+                android:id="@+id/menu_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:clickable="true"
+                android:padding="8dp"
+                android:text="메뉴 2"
+                android:textColor="@android:color/white" />
+
+            <!-- 메뉴 3 -->
+            <TextView
+                android:id="@+id/menu_item_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:clickable="true"
+                android:padding="8dp"
+                android:text="메뉴 3"
+                android:textColor="@android:color/white" />
+
+            <!-- 메뉴 4 -->
+            <TextView
+                android:id="@+id/menu_item_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:clickable="true"
+                android:padding="8dp"
+                android:text="메뉴 4"
+                android:textColor="@android:color/white" />
+
+            <!-- 추가 메뉴 항목을 위해 필요한 만큼 반복하여 추가 -->
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!-- 사용자 정보 및 대기 인원 영역 -->
+
+</LinearLayout>

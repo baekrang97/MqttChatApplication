@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <TextView
+            android:id="@+id/userinfo"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="TextView" />
+
+        <ListView
+            android:id="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="310dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="80dp">
+
+            <EditText
+                android:id="@+id/client"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:hint="client_message"
+                android:importantForAutofill="no"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/button_message"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="35dp"
+            android:text="텍스트 메세지 전송" />
+
+        <Button
+            android:id="@+id/button_off"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="35dp"
+            android:text="대화종료" />
+
+        <Button
+            android:id="@+id/button_off_force"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="35dp"
+
+            android:text="대화 강제종료" />
+
+    </LinearLayout>
+</layout>
